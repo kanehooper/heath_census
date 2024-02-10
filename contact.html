@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Recommendation</title>
+    <style>
+      /* Add some basic styling */
+      body, html {
+                  margin: 0;
+                  padding: 0;
+                  height: 100%;
+                  font-family: Arial, sans-serif;
+              }
+              /* Style the navigation bar */
+              .navbar {
+                background-color: #333; /* Dark background color */
+                overflow: hidden;
+              }
+
+              /* Navigation bar brand */
+              .navbar-brand {
+                float: left;
+                display: block;
+                color: white; /* White text color */
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                font-size: 22px; /* Larger font size for brand */
+              }
+
+              /* Navigation links */
+              .navbar a {
+                float: left;
+                display: block;
+                color: white; /* White text color */
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+              }
+
+              /* The search box style */
+              .navbar input[type=text], .navbar button {
+                float: right;
+                padding: 6px;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+                border: none;
+              }
+
+              /* Clear floats */
+              .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+
+              /* Change color on hover */
+              .navbar a:hover, .navbar button:hover {
+                background-color: #ddd; /* Light grey background on hover */
+                color: black; /* Black text color on hover */
+              }
+
+              /* Hero section styling */
+              .hero-image {
+                  /* Use a placeholder background image */
+                  background-image: url('https://static.independent.co.uk/2023/06/12/13/newFile-3.jpg?quality=75&width=990&crop=3%3A2%2Csmart&auto=webp');
+                  background-size: cover;
+                  background-position: center;
+                  height: 90vh; /* Use 90% of the viewport height */
+                  position: relative;
+              }
+
+              .hero-text {
+                  text-align: center;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  color: white;
+              }
+
+              .hero-text h1 {
+                  font-size: 50px; /* Large text size */
+                  margin-bottom: 20px;
+              }
+
+              .hero-text p {
+                  font-size: 20px; /* Smaller text size */
+              }
+
+              .hero-text button {
+                  background-color: #f04; /* Red button */
+                  color: white;
+                  border: none;
+                  padding: 10px 20px;
+                  margin-top: 20px;
+                  font-size: 20px;
+                  cursor: pointer;
+              }
+
+              .hero-text button:hover {
+                  background-color: #c03; /* Darker red on hover */
+              }
+
+              /* Contact Section */
+              .contact-section {
+                  padding: 50px;
+                  background: #f7f7f7; /* Light grey background */
+              }
+
+              .contact-section h2 {
+                  text-align: center;
+                  font-size: 36px; /* Large font size for the heading */
+                  margin-bottom: 20px; /* Space below the heading */
+              }
+
+              .contact-section p {
+                  text-align: center;
+                  font-size: 18px; /* Standard text size for the paragraph */
+                  margin-bottom: 50px; /* Space below the paragraph */
+              }
+
+              /* Style the form */
+              .contact-form {
+                  max-width: 600px; /* Maximum width of the form */
+                  margin: 0 auto; /* Center the form in the middle of the page */
+              }
+
+              .contact-form label,
+              .contact-form input,
+              .contact-form textarea,
+              .contact-form button {
+                  width: 100%; /* Full width */
+                  padding: 12px; /* Padding inside the inputs */
+                  margin: 8px 0; /* Margin between each form element */
+                  display: block; /* Display block to stack elements */
+                  border: 1px solid #ccc; /* Border around the inputs */
+                  border-radius: 4px; /* Rounded corners */
+              }
+
+              .contact-form button {
+                  background-color: #4CAF50; /* Green background color for the submit button */
+                  color: white; /* White text color */
+                  cursor: pointer; /* Cursor to pointer to indicate a clickable button */
+                  border: none; /* No border for the button */
+              }
+
+              .contact-form button:hover {
+                  background-color: #45a049; /* Darker green background on hover */
+              }
+
+              .contact-form textarea {
+                  height: 150px; /* Height for the textarea */
+              }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-brand">TravelBloom</div>
+      <a href="/travel_recommendations.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/contact.html">Contact Us</a>
+      <!-- The search form -->
+      <div class="clearfix">
+        <input type="text" placeholder="Enter a destination or keyword" />
+        <button type="submit">Search</button>
+        <button type="button">Clear</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="contact-section">
+        <h2>CONTACT US</h2>
+        <p>Get in touch</p>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name.." />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write something.."
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

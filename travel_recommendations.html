@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Recommendation</title>
+    <script src="/travel_recommendation.js" defer></script>
+    <style>
+      /* Add some basic styling */
+      body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          font-family: Arial, sans-serif;
+      }
+      /* Style the navigation bar */
+      .navbar {
+        background-color: #333; /* Dark background color */
+        overflow: hidden;
+      }
+
+      /* Navigation bar brand */
+      .navbar-brand {
+        float: left;
+        display: block;
+        color: white; /* White text color */
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 22px; /* Larger font size for brand */
+      }
+
+      /* Navigation links */
+      .navbar a {
+        float: left;
+        display: block;
+        color: white; /* White text color */
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+
+      /* The search box style */
+      .navbar input[type=text], .navbar button {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+        border: none;
+      }
+
+      /* Clear floats */
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* Change color on hover */
+      .navbar a:hover, .navbar button:hover {
+        background-color: #ddd; /* Light grey background on hover */
+        color: black; /* Black text color on hover */
+      }
+
+      /* Hero section styling */
+      .hero-image {
+          /* Use a placeholder background image */
+          background-image: url('https://static.independent.co.uk/2023/06/12/13/newFile-3.jpg?quality=75&width=990&crop=3%3A2%2Csmart&auto=webp');
+          background-size: cover;
+          background-position: center;
+          height: 90vh; /* Use 90% of the viewport height */
+          position: relative;
+      }
+
+      .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+      }
+
+      .hero-text h1 {
+          font-size: 50px; /* Large text size */
+          margin-bottom: 20px;
+      }
+
+      .hero-text p {
+          font-size: 20px; /* Smaller text size */
+      }
+
+      .hero-text button {
+          background-color: #f04; /* Red button */
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          margin-top: 20px;
+          font-size: 20px;
+          cursor: pointer;
+      }
+
+      .hero-text button:hover {
+          background-color: #c03; /* Darker red on hover */
+      }
+
+      /* Clear floats */
+      .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+      }
+    </style>
+  </head>
+
+  <div class="navbar">
+    <div class="navbar-brand">TravelBloom</div>
+    <a href="/travel_recommendations.html">Home</a>
+    <a href="/about.html">About Us</a>
+    <a href="/contact.html">Contact Us</a>
+    <!-- The search form -->
+    <div class="clearfix">
+      <input
+        id="search_bar"
+        type="text"
+        placeholder="Enter a destination or keyword"
+      />
+      <button id="search_btn" type="submit">Search</button>
+      <button id="clear_btn" type="button">Clear</button>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>EXPLORE DREAM DESTINATION</h1>
+      <p>
+        It encourages exploration of unfamiliar territories, embracing diverse
+        cultures and landscapes, while pursuing the desired destination that
+        captivates the heart and ignites a sense of wonder.
+      </p>
+      <button>BOOK NOW</button>
+      <div id="container"></div>
+    </div>
+  </div>
+</html>
